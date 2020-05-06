@@ -1,0 +1,14 @@
+package com.sample.steps;
+
+import org.openqa.selenium.interactions.Actions;
+
+import com.sample.pages.LoginPage;
+
+public class LoginSteps extends LoginPage{
+
+	public void clickSigin() {
+		Actions a=new Actions(getDriver());
+		a.moveToElement(account_listlink);
+		signinlink.click();
+	}
+}

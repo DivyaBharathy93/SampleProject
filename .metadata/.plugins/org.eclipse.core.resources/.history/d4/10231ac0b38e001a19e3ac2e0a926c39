@@ -1,0 +1,34 @@
+package com.sample.webtest.Test;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.sample.ui.WebDriverSession;
+
+
+
+public class BaseTest extends WebDriverSession {
+	WebDriverSession wb;
+	
+
+  
+  @BeforeTest
+  public void beforeTest() {
+	  wb=new WebDriverSession();
+	    
+	 
+  }
+  
+  @Test
+  public void test() {
+	  System.out.println("Test");
+  }
+
+  @AfterTest
+  public void afterTest() {
+	
+	  
+  }
+
+}

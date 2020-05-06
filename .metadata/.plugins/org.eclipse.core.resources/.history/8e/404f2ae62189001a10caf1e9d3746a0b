@@ -1,0 +1,16 @@
+package com.sample.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.sample.ui.WebDriverSession;
+
+public abstract class LoginPage extends WebDriverSession {
+	WebDriver driver;
+	public LoginPage() {
+		
+		driver=getDriver();
+		PageFactory.initElements(driver, this);
+	}
+
+}

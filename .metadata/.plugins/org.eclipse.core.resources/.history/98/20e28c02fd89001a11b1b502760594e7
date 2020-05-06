@@ -1,0 +1,30 @@
+package com.sample.webtest.Test;
+
+import org.testng.annotations.Test;
+
+import com.sample.steps.LoginSteps;
+import com.sample.ui.WebDriverSession;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.AfterTest;
+
+public class BaseTest extends WebDriverSession {
+	WebDriverSession wb;
+	
+
+  
+  @BeforeTest
+  public void beforeTest() {
+	  wb=new WebDriverSession();
+	  getDriverInstance();	  
+	  navigateBrowser();
+  }
+
+  @AfterTest
+  public void afterTest() {
+	
+	  
+  }
+
+}

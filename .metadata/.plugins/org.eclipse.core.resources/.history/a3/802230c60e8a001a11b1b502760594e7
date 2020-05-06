@@ -1,0 +1,28 @@
+package com.sample.steps;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+
+import com.sample.pages.LoginPage;
+import com.sample.ui.UIInteractions;
+
+public class LoginSteps extends LoginPage{
+	
+	WebDriver driver;
+	
+	public LoginSteps() {
+		this.driver=getDriver();
+		PageFactory.initElements(driver, this);
+	}
+
+	public void clickSigin() {
+		Actions a=new Actions(driver);
+		a.moveToElement(account_listlink).click().perform();
+	}
+	
+	public void EnterEmailAddress() {
+		emailtext.sendKeys("divibs93@gmail.com");
+		UIInteractions.click(continuebtn);
+	}
+}

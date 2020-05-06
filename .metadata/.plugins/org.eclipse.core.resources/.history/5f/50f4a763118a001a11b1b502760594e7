@@ -1,0 +1,36 @@
+package com.sample.webtest.Test;
+
+import org.testng.annotations.Test;
+
+import com.sample.steps.LoginSteps;
+
+import junit.framework.Assert;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+
+public class LoginTest extends BaseTest {
+	LoginSteps login;	
+	String expected,actual;
+	
+  @Test
+  public void f() {
+	  login.clickSigin();
+	  login.EnterEmailAddress();
+	  login.EnterPassword();
+	  expected="Hello, divya";
+	  actual=login.verifyLoginHeader();
+	  Assert.assertEquals(expected, actual);
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	  navigateBrowser();
+	  login=new LoginSteps();
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  closeBrowser();
+  }
+
+}

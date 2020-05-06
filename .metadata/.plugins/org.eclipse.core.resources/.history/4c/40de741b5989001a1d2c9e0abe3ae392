@@ -1,0 +1,30 @@
+package com.sample.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.sample.ui.WebDriverSession;
+
+public abstract class LoginPage extends WebDriverSession {
+	WebDriver driver;
+
+	public LoginPage() {
+		driver = getDriver();
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(xpath="//span[text()='Account & Lists']")
+	protected WebElement account_listlink;
+	
+	@FindBy(xpath="//span[text()='Sign in']")
+	protected WebElement signinlink;
+	
+	@FindBy(id="ap_email")
+	protected WebElement emailtext;
+	
+	@FindBy(id="continue")
+	protected WebElement continuebtn;
+	
+}

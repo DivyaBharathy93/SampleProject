@@ -1,0 +1,10 @@
+package com.sample.steps;
+
+import com.sample.pages.LoginPage;
+
+public class LoginSteps extends LoginPage{
+
+	public void clickSigin() {
+		signinlink.click();
+	}
+}

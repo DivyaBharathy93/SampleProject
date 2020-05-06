@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20931" started-at="2020-05-05T12:12:20Z" finished-at="2020-05-05T12:12:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20931" started-at="2020-05-05T12:12:20Z" finished-at="2020-05-05T12:12:41Z">
+      <class name="com.sample.webtest.Test.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sample.webtest.Test.LoginTest@77f99a05]" name="beforeTest" is-config="true" duration-ms="31" started-at="2020-05-05T17:42:20Z" finished-at="2020-05-05T17:42:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.webtest.Test.LoginTest@77f99a05]" name="beforeMethod" is-config="true" duration-ms="19996" started-at="2020-05-05T17:42:20Z" finished-at="2020-05-05T17:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HeadlessBrowser()[pri:0, instance:com.sample.webtest.Test.LoginTest@77f99a05]" name="HeadlessBrowser" duration-ms="40" started-at="2020-05-05T17:42:40Z" finished-at="2020-05-05T17:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HeadlessBrowser -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.sample.webtest.Test.LoginTest@77f99a05]" name="afterMethod" is-config="true" duration-ms="808" started-at="2020-05-05T17:42:40Z" finished-at="2020-05-05T17:42:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.sample.webtest.Test.LoginTest@77f99a05]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-05-05T17:42:41Z" finished-at="2020-05-05T17:42:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.sample.webtest.Test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

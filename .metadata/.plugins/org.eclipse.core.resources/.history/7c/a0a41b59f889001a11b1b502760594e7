@@ -1,0 +1,26 @@
+package com.sample.steps;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+
+import com.sample.pages.LoginPage;
+
+public class LoginSteps extends LoginPage{
+	
+	
+	public LoginSteps() {
+	
+		PageFactory.initElements(getDriver(), this);
+	}
+
+	public void clickSigin() {
+		Actions a=new Actions(driver);
+		a.moveToElement(account_listlink);
+		signinlink.click();
+	}
+	
+	public void clickAmazonPay() {
+		amazonpaylink.click();
+	}
+}

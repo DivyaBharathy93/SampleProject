@@ -1,0 +1,35 @@
+package com.sample.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.sample.ui.WebDriverSession;
+
+public abstract class LoginPage extends WebDriverSession {
+
+	@FindBy(xpath="//*[@id='nav-tools']/a[2]/span[2]")
+	protected WebElement account_listlink;
+	
+	@FindBy(id="ap_email")
+	protected WebElement emailtext;
+	
+	@FindBy(id="continue")
+	protected WebElement continuebtn;
+	
+	@FindBy(id="ap_password")
+	protected WebElement passwordtext;
+	
+	@FindBy(id="signInSubmit")
+	protected WebElement loginbtn;
+	
+	@FindBy(xpath="//*[@id='nav-tools']/a[2]/span[@class='nav-line-1']")
+	protected WebElement Username;
+	
+	@FindBy(xpath="//*[@class='a-list-item']")
+	protected WebElement usernameEdit;
+	
+	
+	
+}
